@@ -1,1 +1,239 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <style>
 
+
+    body {
+      background-color: #4070f4;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+      padding: 1px 0 0px 30px;
+      margin: 70px;
+      border-radius: 10px;
+      background-color: white;
+    }
+    .re {
+      text-decoration: underline #4070f4;
+    }
+
+    h3 {
+      color: rgb(155, 154, 154);
+    }
+
+    label {
+      font-weight: 500;
+      line-height: 40px;
+    }
+
+    input {
+      padding-top: 4px;
+      width: 310px;
+      height: 45px;
+      border-radius: 6px;
+      border: 2px solid rgb(196, 196, 196);
+      padding-left: 10px;
+    }
+
+    .first-line div {
+      float: left;
+      margin-right: 50px;
+    }
+
+    .first-line {
+      display: inline-block;
+    }
+
+    .second-line {
+      display: inline-block;
+    }
+    .second-line div {
+      margin-top: 10px;
+      float: left;
+      margin-right: 50px;
+    }
+
+    ::placeholder {
+      font-size: medium;
+    }
+
+    .gender-style {
+      padding-top: 4px;
+      width: 310px;
+      height: 45px;
+      border-radius: 6px;
+      border: 2px solid rgb(196, 196, 196);
+      padding-left: 10px;
+      color: #646464;
+      font-size: 17px;
+    }
+
+    .date-style {
+      padding-top: 1px;
+      color: #646464;
+      font-size: 17px;
+      padding-right: 10px;
+    }
+
+    .line-three {
+      display: inline-block;
+    }
+
+    .line-three div {
+      float: left;
+      margin-right: 50px;
+    }
+
+
+    .line-four {
+      margin-top: 13px;
+      display: inline-block;
+    }
+
+    .line-four div {
+      float: left;
+      margin-right: 50px;
+    }
+
+    button {
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      max-width: 200px;
+      width: 100%;
+      border: none;
+      outline: none;
+      color: #fff;
+      border-radius: 5px;
+      margin: 25px 0;
+      background-color: #4070f4;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    @media (max-width: 600px){
+  body{
+    background-color: #fff;
+  }
+
+  .container {
+    margin-top: 20px;
+      margin-left: 10px;
+}
+
+  input{
+    width: 200px;
+  }
+
+  .gender-style{
+    width: 200px;
+  }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1 class="Registration"><span class="re">Re</span>gistration</h1>
+      <h3>Personal Details</h3>
+
+      <div class="first-line">
+        <div>
+          <label>Full Name</label><br />
+          <input
+            class="input-style"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div>
+          <label>Date of Birth</label><br />
+          <input
+            class="date-style"
+            type="date"
+            placeholder="Enter Birth date"
+            required
+          />
+        </div>
+
+        <div>
+          <label>Email</label><br />
+          <input type="email" placeholder="Enter your email" required />
+        </div>
+      </div>
+
+      <div class="second-line">
+        <div>
+          <label>Mobile number</label><br />
+          <input type="number" placeholder="Enter mobile number" required />
+        </div>
+
+        <div>
+          <label>Gender</label><br />
+          <select class="gender-style">
+            <option disabled selected>Select gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Occupation</label><br />
+          <input type="text" placeholder="Enter occupation" required />
+        </div>
+      </div>
+
+      <h3 class="Idnetity">Idnetity Details</h3>
+      <div class="line-three">
+        <div>
+          <label>ID Type</label><br />
+          <input type="text" placeholder="Enter ID type" required />
+        </div>
+        <div>
+          <label>ID number</label><br />
+          <input type="number" placeholder="Enter ID number" required />
+        </div>
+        <div>
+          <label>issue Authority</label><br />
+          <input type="text" placeholder="Enter issue department" required />
+        </div>
+      </div>
+      <div class="line-four">
+      <div>
+          <label>issue date</label><br />
+          <input
+            class="date-style"
+            type="date"
+            placeholder="Enter ID issue date"
+            required
+          />
+        </div>
+
+        <div>
+          <label>issue States</label><br />
+          <input type="text" placeholder="Enter ID issue states" required />
+        </div>
+        <div>
+          <label>Expiry Date</label><br />
+          <input
+            class="date-style"
+            type="date"
+            placeholder="Enter ID expiry date"
+            required
+          />
+        </div>
+      </div>
+
+      <a href="Welcome.html">
+      <button> Next <span class="arrow">&rArr;</span></button>
+    </a>
+    </div>
+  </body>
+</html>
